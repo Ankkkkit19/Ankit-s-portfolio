@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Ankit Kumar Pandit | AI/ML Engineer & Researcher</title>
+  <meta name="description" content="Ankit Kumar Pandit – AI/ML Engineering student at DBUU specializing in NLP, Computer Vision, LLMs, and intelligent systems. Published IEEE researcher, hackathon winner.">
+  <meta name="keywords" content="Ankit Kumar Pandit, AI, ML, Machine Learning, Deep Learning, NLP, Computer Vision, PyTorch, TensorFlow, Portfolio, IEEE Researcher">
+  <meta name="author" content="Ankit Kumar Pandit">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ankit Kumar Pandit | AI/ML Engineer">
+  <meta property="og:description" content="AI/ML Engineering student | IEEE Researcher | Hackathon Winner">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankkkkit19.github.io">
+
+  <!-- Fonts: Inter + Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ============ NAV ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <span class="logo-bracket">&lt;</span>AKP<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#experience" class="nav-link">Timeline</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="hero-bg-glow hero-bg-glow--1"></div>
+      <div class="hero-bg-glow hero-bg-glow--2"></div>
+      <div class="container hero-container">
+        <div class="hero-text" data-reveal>
+          <p class="hero-greeting"><span class="greeting-line"></span> Hello, World! 👋</p>
+          <h1 class="hero-name">Ankit Kumar<br><span class="name-highlight">Pandit</span></h1>
+          <div class="hero-role">
+            <span class="role-prefix">I build </span>
+            <span class="typewriter" id="typewriter"></span>
+            <span class="type-cursor" id="typeCursor">|</span>
+          </div>
+          <p class="hero-tagline">B.Tech CSE (AI/ML) · IEEE Researcher · Hackathon Runner-Up<br>Turning complex data into intelligent systems that matter.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary" id="viewProjectsBtn">
+              <i class="fas fa-rocket"></i> View Projects
+            </a>
+            <a href="resume.pdf" download="Ankit_Kumar_Pandit_Resume.pdf" class="btn btn-outline" id="downloadResumeBtn">
+              <i class="fas fa-download"></i> Resume
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/Ankkkkit19" target="_blank" class="hero-social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/ankit-pandit" target="_blank" class="hero-social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com/the_ai.journey/" target="_blank" class="hero-social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ankitpandit1945@gmail.com" target="_blank" class="hero-social-link" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal data-delay="200">
+          <div class="avatar-wrapper">
+            <div class="avatar-orbital orbital-1"></div>
+            <div class="avatar-orbital orbital-2"></div>
+            <div class="avatar-orbital orbital-3"></div>
+            <div class="avatar-glow"></div>
+            <div class="avatar-frame">
+              <img src="profile.jpg" alt="Ankit Kumar Pandit" class="avatar-img" id="heroAvatar">
+            </div>
+            <div class="avatar-badge badge-top">
+              <i class="fas fa-brain"></i> AI/ML
+            </div>
+            <div class="avatar-badge badge-bottom">
+              <i class="fas fa-graduation-cap"></i> B.Tech CSE
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-num">01</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo-col" data-reveal>
+            <div class="about-photo-wrap">
+              <img src="profile.jpg" alt="Ankit Kumar Pandit" class="about-photo">
+              <div class="about-photo-border"></div>
+              <div class="about-photo-dot dot-1"></div>
+              <div class="about-photo-dot dot-2"></div>
+            </div>
+          </div>
+
+          <div class="about-content" data-reveal data-delay="150">
+            <h3 class="about-heading">Passionate about <span class="text-accent">Intelligent Systems</span></h3>
+            <p class="about-text">I am a B.Tech CSE (AI/ML specialization) student at <strong>Dev Bhoomi Uttarakhand University, Dehradun</strong> (Batch 2024–2028). I focus on building AI systems that bridge the gap between cutting-edge research and real-world impact.</p>
+            <p class="about-text">My expertise spans <strong>NLP</strong>, <strong>Computer Vision</strong>, <strong>LLMs</strong>, and <strong>Federated Learning</strong>. I've authored multiple IEEE research papers and competed in global hackathons including Meta's PyTorch OpenEnv.</p>
+
+            <div class="about-tags">
+              <span class="about-tag"><i class="fas fa-map-marker-alt"></i> Dehradun, India</span>
+              <span class="about-tag"><i class="fas fa-university"></i> DBUU, 2024–2028</span>
+              <span class="about-tag"><i class="fas fa-search"></i> Open to Opportunities</span>
+            </div>
+
+            <div class="stats-row">
+              <div class="stat-card" data-count="4">
+                <span class="stat-num" data-target="4">0</span><span class="stat-plus">+</span>
+                <span class="stat-lab">IEEE Papers</span>
+              </div>
+              <div class="stat-card" data-count="200">
+                <span class="stat-num" data-target="200">0</span><span class="stat-plus">+</span>
+                <span class="stat-lab">DSA Problems</span>
+              </div>
+              <div class="stat-card" data-count="6">
+                <span class="stat-num" data-target="6">0</span><span class="stat-plus">+</span>
+                <span class="stat-lab">Projects Built</span>
+              </div>
+              <div class="stat-card" data-count="2">
+                <span class="stat-num" data-target="2">0</span><span class="stat-plus">+</span>
+                <span class="stat-lab">Hackathons</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-num">02</span>
+          <h2 class="section-title">Tech Stack</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skill-category" data-reveal>
+            <h3 class="skill-cat-title"><i class="fas fa-brain"></i> AI / ML</h3>
+            <div class="skill-pills">
+              <div class="skill-pill" data-level="95"><span>Python</span><div class="pill-bar"><div class="pill-fill" style="--w:95%"></div></div></div>
+              <div class="skill-pill" data-level="88"><span>PyTorch</span><div class="pill-bar"><div class="pill-fill" style="--w:88%"></div></div></div>
+              <div class="skill-pill" data-level="85"><span>TensorFlow</span><div class="pill-bar"><div class="pill-fill" style="--w:85%"></div></div></div>
+              <div class="skill-pill" data-level="82"><span>Scikit-learn</span><div class="pill-bar"><div class="pill-fill" style="--w:82%"></div></div></div>
+              <div class="skill-pill" data-level="80"><span>OpenCV</span><div class="pill-bar"><div class="pill-fill" style="--w:80%"></div></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category" data-reveal data-delay="100">
+            <h3 class="skill-cat-title"><i class="fas fa-robot"></i> LLMs & AI Infra</h3>
+            <div class="skill-pills">
+              <div class="skill-pill" data-level="85"><span>LangChain</span><div class="pill-bar"><div class="pill-fill" style="--w:85%"></div></div></div>
+              <div class="skill-pill" data-level="80"><span>Vector DBs</span><div class="pill-bar"><div class="pill-fill" style="--w:80%"></div></div></div>
+              <div class="skill-pill" data-level="75"><span>RAG Systems</span><div class="pill-bar"><div class="pill-fill" style="--w:75%"></div></div></div>
+              <div class="skill-pill" data-level="78"><span>n8n / Automation</span><div class="pill-bar"><div class="pill-fill" style="--w:78%"></div></div></div>
+              <div class="skill-pill" data-level="72"><span>HuggingFace</span><div class="pill-bar"><div class="pill-fill" style="--w:72%"></div></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category" data-reveal data-delay="200">
+            <h3 class="skill-cat-title"><i class="fas fa-code"></i> Dev & Tools</h3>
+            <div class="skill-pills">
+              <div class="skill-pill" data-level="80"><span>FastAPI</span><div class="pill-bar"><div class="pill-fill" style="--w:80%"></div></div></div>
+              <div class="skill-pill" data-level="75"><span>React + Vite</span><div class="pill-bar"><div class="pill-fill" style="--w:75%"></div></div></div>
+              <div class="skill-pill" data-level="82"><span>Node.js</span><div class="pill-bar"><div class="pill-fill" style="--w:82%"></div></div></div>
+              <div class="skill-pill" data-level="88"><span>Git & Linux</span><div class="pill-bar"><div class="pill-fill" style="--w:88%"></div></div></div>
+              <div class="skill-pill" data-level="70"><span>NumPy / Pandas</span><div class="pill-bar"><div class="pill-fill" style="--w:70%"></div></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Icon Badge Grid -->
+        <div class="skills-badge-grid" data-reveal data-delay="300">
+          <div class="skill-badge"><i class="fab fa-python"></i><span>Python</span></div>
+          <div class="skill-badge"><i class="fas fa-fire"></i><span>PyTorch</span></div>
+          <div class="skill-badge"><i class="fas fa-network-wired"></i><span>TensorFlow</span></div>
+          <div class="skill-badge"><i class="fas fa-eye"></i><span>OpenCV</span></div>
+          <div class="skill-badge"><i class="fab fa-react"></i><span>React</span></div>
+          <div class="skill-badge"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+          <div class="skill-badge"><i class="fab fa-git-alt"></i><span>Git</span></div>
+          <div class="skill-badge"><i class="fab fa-linux"></i><span>Linux</span></div>
+          <div class="skill-badge"><i class="fas fa-database"></i><span>VectorDB</span></div>
+          <div class="skill-badge"><i class="fas fa-link"></i><span>LangChain</span></div>
+          <div class="skill-badge"><i class="fas fa-bolt"></i><span>FastAPI</span></div>
+          <div class="skill-badge"><i class="fas fa-project-diagram"></i><span>n8n</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-num">03</span>
+          <h2 class="section-title">Select Projects</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-card" data-reveal>
+            <div class="project-img-wrap">
+              <div class="project-img" style="background: linear-gradient(135deg, #0a1628 0%, #112240 100%);">
+                <i class="fas fa-heartbeat project-icon"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="plink" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="plink plink--primary" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-num">01</span>
+                <div class="project-badges">
+                  <span class="proj-badge">IEEE Published</span>
+                </div>
+              </div>
+              <h3 class="project-title">Smart Health & Lifestyle Assistant</h3>
+              <p class="project-desc">An IEEE-published AI system that predicts lifestyle diseases through advanced ML algorithms, providing real-time preventive health monitoring.</p>
+              <div class="project-tags">
+                <span>Python</span><span>TensorFlow</span><span>ML</span><span>IEEE</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card project-card--featured" data-reveal data-delay="100">
+            <div class="project-img-wrap">
+              <div class="project-img" style="background: linear-gradient(135deg, #0d1b3e 0%, #1a2a5e 100%);">
+                <i class="fas fa-user-astronaut project-icon"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="plink" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="plink plink--primary" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-num">02</span>
+                <div class="project-badges">
+                  <span class="proj-badge proj-badge--hot">Featured</span>
+                </div>
+              </div>
+              <h3 class="project-title">AI Digital Twin Platform</h3>
+              <p class="project-desc">A professional-grade digital twin platform powered by LLMs for creating personalized, interactive AI avatars with persistent memory.</p>
+              <div class="project-tags">
+                <span>LLMs</span><span>LangChain</span><span>React</span><span>FastAPI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-reveal data-delay="200">
+            <div class="project-img-wrap">
+              <div class="project-img" style="background: linear-gradient(135deg, #0a1628 0%, #0d2137 100%);">
+                <i class="fas fa-hands project-icon"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="plink" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="plink plink--primary" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-num">03</span>
+              </div>
+              <h3 class="project-title">Sign Language Recognition</h3>
+              <p class="project-desc">Real-time CV system translating sign language gestures into text using custom-trained deep learning models with 94%+ accuracy.</p>
+              <div class="project-tags">
+                <span>Computer Vision</span><span>OpenCV</span><span>PyTorch</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-reveal data-delay="100">
+            <div class="project-img-wrap">
+              <div class="project-img" style="background: linear-gradient(135deg, #0f1923 0%, #1a2535 100%);">
+                <i class="fas fa-newspaper project-icon"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="plink" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="plink plink--primary" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-num">04</span>
+                <div class="project-badges">
+                  <span class="proj-badge">IEEE Research</span>
+                </div>
+              </div>
+              <h3 class="project-title">Fake News Detector (NLP)</h3>
+              <p class="project-desc">NLP pipeline evaluating linguistic signals and semantic patterns to detect misinformation in news articles with high precision.</p>
+              <div class="project-tags">
+                <span>NLP</span><span>Scikit-learn</span><span>BERT</span><span>TF-IDF</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-reveal data-delay="200">
+            <div class="project-img-wrap">
+              <div class="project-img" style="background: linear-gradient(135deg, #0c1a1f 0%, #102838 100%);">
+                <i class="fas fa-shield-alt project-icon"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="plink" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="plink plink--primary" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-num">05</span>
+              </div>
+              <h3 class="project-title">Email Spam Classifier</h3>
+              <p class="project-desc">Custom ML spam classifier built from scratch without external libraries — pure algorithm implementation with 97%+ accuracy.</p>
+              <div class="project-tags">
+                <span>Python</span><span>ML From Scratch</span><span>Naive Bayes</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-reveal data-delay="300">
+            <div class="project-img-wrap">
+              <div class="project-img" style="background: linear-gradient(135deg, #0d1a2b 0%, #13253b 100%);">
+                <i class="fas fa-home project-icon"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="plink" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="plink plink--primary" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-num">06</span>
+              </div>
+              <h3 class="project-title">PG Accommodation Platform</h3>
+              <p class="project-desc">Full-stack PG management platform with rent calculators, dashboards, dark mode, and real-time analytics built with React + Vite.</p>
+              <div class="project-tags">
+                <span>React</span><span>Node.js</span><span>Vite</span><span>CSS</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section id="research" class="section research">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-num">04</span>
+          <h2 class="section-title">Research & Publications</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="research-list">
+
+          <div class="research-card" data-reveal>
+            <div class="research-card-left">
+              <div class="research-icon"><i class="fas fa-file-alt"></i></div>
+            </div>
+            <div class="research-card-body">
+              <div class="research-top">
+                <span class="research-badge badge-published">Published</span>
+                <span class="research-venue"><i class="fas fa-award"></i> IEEE Conference</span>
+              </div>
+              <h3>Smart Health & Lifestyle Assistant Using ML</h3>
+              <p class="research-authors"><i class="fas fa-user"></i> Ankit Kumar Pandit &amp; Co-authors</p>
+              <p class="research-desc">A predictive ML approach applied to lifestyle disease diagnosis via real-time monitoring of physiological and behavioral signals.</p>
+            </div>
+          </div>
+
+          <div class="research-card" data-reveal data-delay="100">
+            <div class="research-card-left">
+              <div class="research-icon"><i class="fas fa-lock"></i></div>
+            </div>
+            <div class="research-card-body">
+              <div class="research-top">
+                <span class="research-badge badge-published">Published</span>
+                <span class="research-venue"><i class="fas fa-award"></i> IEEE</span>
+              </div>
+              <h3>FAML: Federated & Privacy-Preserving ML Framework</h3>
+              <p class="research-authors"><i class="fas fa-user"></i> Ankit Kumar Pandit &amp; Co-authors</p>
+              <p class="research-desc">A novel federation framework designed to train advanced ML models across distributed nodes while ensuring strict data privacy guarantees.</p>
+            </div>
+          </div>
+
+          <div class="research-card" data-reveal data-delay="200">
+            <div class="research-card-left">
+              <div class="research-icon"><i class="fas fa-search"></i></div>
+            </div>
+            <div class="research-card-body">
+              <div class="research-top">
+                <span class="research-badge badge-review">Under Review</span>
+                <span class="research-venue"><i class="fas fa-book"></i> Journal</span>
+              </div>
+              <h3>Automated Fake News Detection via NLP</h3>
+              <p class="research-authors"><i class="fas fa-user"></i> Ankit Kumar Pandit &amp; Co-authors</p>
+              <p class="research-desc">An automated NLP strategy leveraging transformer models and linguistic features to combat disinformation at scale.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section id="achievements" class="section achievements">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-num">05</span>
+          <h2 class="section-title">Achievements</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="achievement-card" data-reveal>
+            <div class="ach-icon"><i class="fas fa-trophy"></i></div>
+            <div class="ach-content">
+              <h3>Hackathon Runner-Up</h3>
+              <p>Lakshagriha 2026 Global Hackathon @ DBUU</p>
+              <span class="ach-year">2026</span>
+            </div>
+          </div>
+          <div class="achievement-card" data-reveal data-delay="100">
+            <div class="ach-icon"><i class="fab fa-meta"></i></div>
+            <div class="ach-content">
+              <h3>Meta PyTorch Hackathon</h3>
+              <p>OpenEnv Hackathon — $30K Prize Pool Participant</p>
+              <span class="ach-year">2025</span>
+            </div>
+          </div>
+          <div class="achievement-card" data-reveal data-delay="200">
+            <div class="ach-icon"><i class="fas fa-file-alt"></i></div>
+            <div class="ach-content">
+              <h3>IEEE Researcher</h3>
+              <p>4+ Published & Under-Review Papers</p>
+              <span class="ach-year">2024–Present</span>
+            </div>
+          </div>
+          <div class="achievement-card" data-reveal data-delay="300">
+            <div class="ach-icon"><i class="fas fa-code"></i></div>
+            <div class="ach-content">
+              <h3>200+ DSA Problems</h3>
+              <p>Solved across LeetCode, CodeForces & HackerRank</p>
+              <span class="ach-year">Ongoing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scrolling Ticker -->
+      <div class="ticker-outer" data-reveal>
+        <div class="ticker-track">
+          <span class="ticker-item"><i class="fas fa-trophy"></i> Runner-Up · Lakshagriha 2026 Hackathon</span>
+          <span class="ticker-item"><i class="fab fa-meta"></i> Meta PyTorch OpenEnv Hackathon · $30K Pool</span>
+          <span class="ticker-item"><i class="fas fa-file-alt"></i> 4+ IEEE Research Papers</span>
+          <span class="ticker-item"><i class="fas fa-code"></i> 200+ Coding Problems Solved</span>
+          <span class="ticker-item"><i class="fas fa-brain"></i> AI/ML Specialization · DBUU</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="ticker-item"><i class="fas fa-trophy"></i> Runner-Up · Lakshagriha 2026 Hackathon</span>
+          <span class="ticker-item"><i class="fab fa-meta"></i> Meta PyTorch OpenEnv Hackathon · $30K Pool</span>
+          <span class="ticker-item"><i class="fas fa-file-alt"></i> 4+ IEEE Research Papers</span>
+          <span class="ticker-item"><i class="fas fa-code"></i> 200+ Coding Problems Solved</span>
+          <span class="ticker-item"><i class="fas fa-brain"></i> AI/ML Specialization · DBUU</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE / TIMELINE ============ -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-num">06</span>
+          <h2 class="section-title">Timeline</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item" data-reveal>
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <span class="tl-tag tl-tag--edu"><i class="fas fa-graduation-cap"></i> Education</span>
+                <span class="tl-date">2024 – 2028</span>
+              </div>
+              <h3>B.Tech CSE (AI/ML Specialization)</h3>
+              <p class="tl-org"><i class="fas fa-university"></i> Dev Bhoomi Uttarakhand University, Dehradun</p>
+              <p class="tl-desc">Commenced studies with a specialized focus on Artificial Intelligence and Machine Learning, building foundations in deep learning, NLP, and computer vision.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal data-delay="100">
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <span class="tl-tag tl-tag--research"><i class="fas fa-file-alt"></i> Research</span>
+                <span class="tl-date">2024</span>
+              </div>
+              <h3>First IEEE Paper Published</h3>
+              <p class="tl-org"><i class="fas fa-award"></i> IEEE Conference</p>
+              <p class="tl-desc">Authored the Smart Health & Lifestyle Assistant paper — an ML-based approach to lifestyle disease prediction and real-time health monitoring.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal data-delay="200">
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <span class="tl-tag tl-tag--award"><i class="fas fa-trophy"></i> Achievement</span>
+                <span class="tl-date">2026</span>
+              </div>
+              <h3>Runner-Up · Lakshagriha Hackathon</h3>
+              <p class="tl-org"><i class="fas fa-globe"></i> Global Hackathon @ DBUU</p>
+              <p class="tl-desc">Achieved Runner-up position by delivering a scalable, production-ready AI solution under intense competition from teams across India.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal data-delay="300">
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <span class="tl-tag tl-tag--award"><i class="fab fa-meta"></i> Hackathon</span>
+                <span class="tl-date">2025</span>
+              </div>
+              <h3>Meta PyTorch OpenEnv Hackathon</h3>
+              <p class="tl-org"><i class="fas fa-rocket"></i> $30K Prize Pool</p>
+              <p class="tl-desc">Built advanced reinforcement learning and AI agent modules for state-of-the-art task execution in Meta's competitive OpenEnv hackathon.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-num">07</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-info" data-reveal>
+            <h3 class="contact-heading">Let's <span class="text-accent">Collaborate</span></h3>
+            <p class="contact-text">Currently open to internships, research collaborations, and exciting AI/ML projects. Whether you have a question or just want to say hi — I'll get back to you!</p>
+
+            <div class="contact-links">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ankitpandit1945@gmail.com" target="_blank" class="contact-link-card">
+                <div class="clc-icon"><i class="fas fa-envelope"></i></div>
+                <div class="clc-text">
+                  <span class="clc-label">Email</span>
+                  <span class="clc-val">ankitpandit1945@gmail.com</span>
+                </div>
+              </a>
+              <a href="https://linkedin.com/in/ankit-pandit" target="_blank" class="contact-link-card">
+                <div class="clc-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div class="clc-text">
+                  <span class="clc-label">LinkedIn</span>
+                  <span class="clc-val">ankit-pandit</span>
+                </div>
+              </a>
+              <a href="https://github.com/Ankkkkit19" target="_blank" class="contact-link-card">
+                <div class="clc-icon"><i class="fab fa-github"></i></div>
+                <div class="clc-text">
+                  <span class="clc-label">GitHub</span>
+                  <span class="clc-val">Ankkkkit19</span>
+                </div>
+              </a>
+              <a href="https://instagram.com/the_ai.journey/" target="_blank" class="contact-link-card">
+                <div class="clc-icon"><i class="fab fa-instagram"></i></div>
+                <div class="clc-text">
+                  <span class="clc-label">Instagram</span>
+                  <span class="clc-val">the_ai.journey</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap" data-reveal data-delay="150">
+            <form class="contact-form" id="contactForm" novalidate onsubmit="handleContactSubmit(event)">
+              <div class="cf-row">
+                <div class="cf-group">
+                  <label for="cf-name">Name</label>
+                  <input type="text" id="cf-name" placeholder="Your Name" required autocomplete="name">
+                </div>
+                <div class="cf-group">
+                  <label for="cf-email">Email</label>
+                  <input type="email" id="cf-email" placeholder="your@email.com" required autocomplete="email">
+                </div>
+              </div>
+              <div class="cf-group">
+                <label for="cf-subject">Subject</label>
+                <input type="text" id="cf-subject" placeholder="Internship Inquiry / Collaboration / General" required>
+              </div>
+              <div class="cf-group">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="contactSubmitBtn">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+              <div class="cf-success" id="cfSuccess" style="display:none;">
+                <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+              </div>
+            </form>
+          </div>
+
+          <script>
+          function handleContactSubmit(e) {
+            e.preventDefault();
+            var name = document.getElementById('cf-name').value.trim();
+            var email = document.getElementById('cf-email').value.trim();
+            var subject = document.getElementById('cf-subject').value.trim() || 'Portfolio Contact';
+            var message = document.getElementById('cf-message').value.trim();
+            if (!name || !email || !message) return;
+            var body = 'Hi Ankit,\n\nName: ' + name + '\nEmail: ' + email + '\n\n' + message;
+            
+            // Explicitly redirect to Gmail web compose
+            var gmailLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=ankitpandit1945@gmail.com&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+            
+            // Open Gmail in a new tab
+            var w = window.open(gmailLink, '_blank');
+            
+            var suc = document.getElementById('cfSuccess');
+            if (suc) { suc.style.display = 'flex'; suc.style.gap = '0.5rem'; }
+            setTimeout(function() {
+              document.getElementById('contactForm').reset();
+              setTimeout(function() { if (suc) suc.style.display = 'none'; }, 4000);
+            }, 500);
+          }
+          </script>
+        </div>
+
+        <!-- Final CTA -->
+        <div class="final-cta" data-reveal>
+          <div class="final-cta-inner">
+            <h2>Ready to build something <span class="text-accent">extraordinary</span>?</h2>
+            <p>I'm actively seeking internships and research collaborations in AI/ML. Let's create intelligent systems together.</p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ankitpandit1945@gmail.com" target="_blank" class="btn btn-primary btn-lg">
+              <i class="fas fa-envelope"></i> Hire Me Now
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="nav-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>AKP<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-copy">Designed &amp; Built by <strong>Ankit Kumar Pandit</strong> · © <span id="year"></span></p>
+        <div class="footer-socials">
+          <a href="https://github.com/Ankkkkit19" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/ankit-pandit" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/the_ai.journey/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
