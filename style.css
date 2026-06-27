@@ -566,12 +566,73 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .tag-purple { background: #f3e8ff; color: #7c3aed; }
 .tag-orange { background: #fef3c7; color: #d97706; }
+.tag-green  { background: #dcfce7; color: #16a34a; }
 [data-theme="dark"] .tag-purple { background: #3b0764; color: #c084fc; }
 [data-theme="dark"] .tag-orange { background: #451a03; color: #fb923c; }
+[data-theme="dark"] .tag-green  { background: #052e16; color: #4ade80; }
 
 .edu-title { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: .3rem; }
 .edu-org   { font-size: .875rem; font-weight: 600; color: var(--accent); margin-bottom: .5rem; }
 .edu-desc  { font-size: .875rem; color: var(--text-muted); line-height: 1.65; }
+
+/* ============================================================
+   EXPERIENCE SECTION
+   ============================================================ */
+.exp-timeline { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.exp-card {
+  display: flex; gap: 1.25rem;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.6rem 1.75rem;
+  transition: box-shadow var(--tr), border-color var(--tr);
+}
+.exp-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent);
+}
+
+.exp-left {
+  display: flex; flex-direction: column; align-items: center; gap: .5rem;
+  flex-shrink: 0;
+}
+.exp-icon {
+  width: 48px; height: 48px; font-size: 1.4rem;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--accent-lt); border-radius: 12px;
+}
+.exp-line {
+  flex: 1; width: 2px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  border-radius: 2px; min-height: 20px;
+}
+
+.exp-body { flex: 1; }
+.exp-meta {
+  display: flex; align-items: center; gap: .65rem;
+  margin-bottom: .6rem; flex-wrap: wrap;
+}
+.exp-date {
+  font-size: .82rem; font-weight: 600; color: var(--accent);
+}
+.exp-title {
+  font-size: 1.1rem; font-weight: 700; color: var(--text);
+  margin-bottom: .25rem;
+}
+.exp-org {
+  font-size: .875rem; font-weight: 600; color: var(--accent);
+  margin-bottom: .75rem;
+}
+.exp-points {
+  margin: 0; padding-left: 1.25rem;
+  display: flex; flex-direction: column; gap: .45rem;
+}
+.exp-points li {
+  font-size: .875rem; color: var(--text-muted);
+  line-height: 1.65;
+}
+
 
 /* ============================================================
    CONTACT SECTION
