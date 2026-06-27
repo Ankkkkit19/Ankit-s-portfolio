@@ -167,7 +167,7 @@ const revealObserver = new IntersectionObserver((entries, obs) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
 // Auto-attach reveal to section children
-$$('.inner > *, .home-left > *, .home-right, .about-text > *, .about-right, .res-card, .edu-card, .proj-card, .clink, .stat, .contact-intro, .focus-box').forEach(el => {
+$$('.inner > *, .home-left > *, .home-right, .about-text > *, .about-right, .res-card, .edu-card, .proj-card, .cert-card, .exp-card, .clink, .stat, .contact-intro, .focus-box').forEach(el => {
   el.classList.add('reveal');
   revealObserver.observe(el);
 });

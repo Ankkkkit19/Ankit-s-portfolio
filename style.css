@@ -635,6 +635,90 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 
 /* ============================================================
+   CERTIFICATIONS SECTION
+   ============================================================ */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.cert-card {
+  display: flex;
+  gap: 1.25rem;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: box-shadow var(--tr), border-color var(--tr), transform var(--tr);
+}
+
+.cert-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.cert-icon {
+  width: 44px;
+  height: 44px;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-lt);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.cert-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cert-date {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: .35rem;
+}
+
+.cert-title {
+  font-size: .975rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: .25rem;
+  line-height: 1.4;
+}
+
+.cert-org {
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: .5rem;
+}
+
+.cert-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: auto;
+}
+
+.cert-code, .cert-hours {
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 600;
+  padding: .15rem .5rem;
+  border-radius: 4px;
+  background: var(--bg-alt);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+
+/* ============================================================
    CONTACT SECTION
    ============================================================ */
 .contact-grid {
@@ -735,7 +819,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 @media (max-width: 580px) {
-  .proj-grid, .edu-grid { grid-template-columns: 1fr; }
+  .proj-grid, .edu-grid, .certs-grid { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; text-align: center; }
   .home-wrap { padding: 3rem 1.25rem; }
   .section { padding: 3.5rem 0; }
