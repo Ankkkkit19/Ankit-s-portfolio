@@ -717,6 +717,23 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border: 1px solid var(--border);
 }
 
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: .7rem;
+  font-weight: 700;
+  padding: .15rem .6rem;
+  border-radius: 4px;
+  background: var(--accent-lt);
+  color: var(--accent);
+  text-decoration: none;
+  transition: all var(--tr);
+}
+.cert-link:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 
 /* ============================================================
    CONTACT SECTION
